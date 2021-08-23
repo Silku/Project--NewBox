@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-#header, #container,#footer{
-  margin:0;
+#header, #footer{
+  margin:0 auto;
   padding:0;
+}
+#container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #header{
@@ -39,11 +45,15 @@
   text-decoration: none;  
 }
 #header_quickmenu{
+  margin:0 auto;
   width:150px;
   height: 90px;
+  line-height: 90px;
+  text-align: center;
 }
 /* 메인 콘텐츠 영역 */
-#container{
+#contents{
+  margin:0 auto;
   display: flex;
   width:1920px;
   height: 100%;
@@ -59,6 +69,10 @@
   width:1400px;
   height: 1000px;
   background-color: rgb(29,68,123);
+  color:white
+}
+#main_image > p{
+  font-family : 'Roboto', sans-serif;
 }
 
 #main_article{
@@ -74,6 +88,8 @@
   height:100%;
 }
 #footer_top{
+  display: flex;
+  float: left;
   margin:0px;
   padding:0px;
   width:1400px;
@@ -104,14 +120,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.footer_quickmenu_mn li{
   list-style: none;
   text-decoration: none;
 }
-
 #copyright{
   margin:0px;
   padding:0px;
   width:1400px;
   height: 78px;
   background-color: antiquewhite;
+  text-align: center;
+  line-height: 78px;
 }
