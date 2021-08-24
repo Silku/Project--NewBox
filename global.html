@@ -6,9 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NewBox에 오신것을 환영합니다.</title>
   <link rel="stylesheet" href="css/global.css">
-  <script type="text/javascript" src="global.js"></script>
+  
 </head>
 <body>
+  <div id="header_quickmenu_dtl">
+      <div class="qm_logo"></div>
+      <div class="qm_close"></div>
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">제품안내</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">공지사항</a></li>
+      </ul>
+    </div>
+  </div>
   <contianer id = "container">
   <header id = "header">
     <div id ="header_container">
@@ -20,20 +32,72 @@
         <li class="navbar_list"><a href="#">Map</a></li>
         <li class="navbar_list"><a href="#">Notice</a></li>
       </ul>
-      <div id="header_quickmenu"><a href="#">
+      <div id="header_quickmenu"><a href="#" id="hqm">
         <img width="55px"; height="45px" src="image/free-icon-menu-button-of-three-horizontal-lines.png"></a>
       </div>
     </div>
   </header>
   <container id = "contents">
     <div id ="main_image">
-      <p>Dreams of a blue world</p>
+      <p>Dreams of a Blue World</p>
       <h1> <span>각국에서</span>  만나는 포카리스웨트  <span>글로벌 패키지</span></h1>
       <p class="text">
         포카리스웨트는 아시아와 중동 지역을 선점하며, 글로벌 브랜드로서 확대 가능성을 열어 두고 있습니다.
         <br>
         동일한 브랜드 아이덴티티를 가지고 있는 패키지에 ‘POCARI SWEAT’를 기입하여 특별함을 완성합니다.
       </p>
+      <div class="earth_spin">
+        <p class="big_spin">
+          <img src="image/earth01.png">
+        </p>
+        <p class="small_spin">
+          <img src="image/earth02.png">
+        </p>
+      </div>
+      <ul class="country_wrap">
+        <li class ="cambodia">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">cambodia</p> 
+          </li>
+        <li class ="middle_east">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">middle_east</p> 
+          </li>
+        <li class ="thai">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">hongkong</p> 
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">china</p> 
+          </li>
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">korea</p> 
+          </li>
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">japan</p> 
+          </li>
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">singapore</p> 
+          </li>
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">egypt</p> 
+          </li>
+        </li>
+        <li class ="">
+          <img src="/image/plus_white.png" alt="">
+          <p class="country">indonesia</p> 
+          </li>
+        </li>
+      </ul>
     </div>
     <div id ="main_article">
     </div>
@@ -43,46 +107,50 @@
       <div class="footer_top_left"></div>
       <div class="footer_top_right"></div>
     </div>
-    <div id ="footer_quickmenu">
-      <ul class ="footer_quickmenu_mn">
-        <li>PRODUCT
-          <ul>
-            <li>포카리스웨트</li>
-            <li>포카리스웨트 이온워터</li>
-            <li>연혁</li>
-            <li>패키지</li>
-          </ul>
-        </li>
-        <li>MEDIA
-          <ul>
-            <li>모델 TVCF</li>
-            <li>캠페인&프로모션</li>
-            <li>언론자료</li>
-            <li></li>
-          </ul>
-        </li>
-        <li>COMMUNITY
-          <ul>
-            <li>SOCIAL</li>
-            <li>갤러리</li>
-            <li>스토리</li>
-            <li>이벤트</li>
-          </ul>
-        </li>
-        <li>GLOBAL
-          <ul>
-            <li>글로벌 네트워크</li>
-          </ul>
-        </li>
-        <li>INFOMATION
+    <div id = "footer_bottom">
+      <div id ="footer_quickmenu">
+        <ul class ="footer_quickmenu_mn">
+          <li>PRODUCT
+            <ul>
+              <li>포카리스웨트</li>
+              <li>포카리스웨트 이온워터</li>
+              <li>연혁</li>
+              <li>패키지</li>
+            </ul>
+          </li>
+          <li>MEDIA
+            <ul>
+              <li>모델 TVCF</li>
+              <li>캠페인&프로모션</li>
+              <li>언론자료</li>
+              <li></li>
+            </ul>
+          </li>
+          <li>COMMUNITY
+            <ul>
+              <li>SOCIAL</li>
+              <li>갤러리</li>
+              <li>스토리</li>
+              <li>이벤트</li>
+            </ul>
+          </li>
+          <li>GLOBAL
+            <ul>
+              <li>글로벌 네트워크</li>
+            </ul>
+          </li>
+          <li>INFOMATION
 
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <div id ="copyright">
       Copyright ⓒ2017 donga-Otsuka co, ltd. All rights reserved
     </div>
+    
   </footer>
 </contianer>
+<script src="/js/global.js"></script>
 </body>
 </html>
