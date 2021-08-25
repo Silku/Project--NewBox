@@ -5,54 +5,23 @@
   padding:0;
   font-family : 'Roboto', sans-serif;
 }
-/* 헤더 퀵메뉴 세부항목 */
-#header_quickmenu_dtl{
-  display: none;
-  margin:0 auto;
-  padding:0 auto;
-  position:fixed;
-  right:0;
-  width:450px;
-  height:100%;
-  background-color: #888;
-  transition:all 0.7s;
-  z-index: 99;
-}
-#header_quickmenu_dtl .qm_close{
-  margin:0 auto;
-  width:50px;
-  height: 50px;
-  padding-top:25px;
-  /* background-color: #aaa; */
-  float: right;
-  cursor: pointer;
-  z-index:100; 
-}
-#header_quickmenu_dtl .qm_close:hover{
-  transform: rotate(-90deg) ;
-  transition: 0.5s;
-}
-#header_quickmenu_dtl .qm_close::before{
-  content:'';
-  display: block;
-  margin: 4px 0;
-  height: 4px;
-  background-color: #121212;
-  transform:  rotate(-135deg)  translateY(0%)  ;
-}
-#header_quickmenu_dtl .qm_close::after{
-  content:'';
-  display: block;
-  margin: 4px 0;
-  height: 4px;
-  background-color: #121212;
-  transform: rotate(135deg) translateY(0%);
-}
-#header_quickmenu_dtl li{
+ul, li{
   list-style-type: none;
 }
-#header_quickmenu_dtl a{
+a{
   text-decoration: none;
+}
+/* 헤더 퀵네비 설정 */
+/* 기준 
+  - 랩탑 : 1024이상
+  - 아이패드 : 768*1024;
+  - 갤s5 360*640;
+*/
+#header_quick_nav_icon{
+  display: none;
+}
+#header_quick_nav{
+  display: none;
 }
 /* 메인페이지 시작 */
 #container_wrap{
@@ -64,20 +33,24 @@
 #header{
   width: 100%;
   height: 90px;
-  background-color: #efefef;
+  /* background-color: #efefef; */
 }
 #header_container{
-  width:100%;
-  height: 100%;
   display: flex;
+  width:100%;
+  height: 100%; 
   flex-direction: row;
   align-items: center;
 }
-#logo{
-  margin:0px 0px 10px 40px;
+.logo{
+  margin:0 auto;
   width:200px;
   height: 90px;
-  
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.logo_s{
+  display: none;
 }
 #navbar{
   display: flex;
@@ -86,7 +59,6 @@
   justify-content: space-around;
   align-items: center;
   background-color :#efefef;
-
 }
 .navbar_list{
   list-style: none; 
@@ -94,7 +66,7 @@
 }
 .navbar_list > a{
   display: block;
-  width:200px;
+  width:130px;
   height: 90px;
   text-decoration: none; 
   text-align: center;
@@ -106,6 +78,11 @@
 .navbar_list > a:hover{
   color:#565656;
   /* background-color: #fff; */
+}
+.quick_mn{
+  float: right;
+  width:200px;
+  height: 90px;
 }
 
 #header_quickmenu{
@@ -123,7 +100,7 @@
 #contents{
   margin:0 auto;
   display: flex;
-  width:1920px;
+  width:100%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -254,3 +231,71 @@
   text-align: center;
   line-height: 78px;
 }
+
+@media screen and (max-width:1023px) {
+  #header_quick_nav{
+    display: none;
+    margin:0 auto;
+    padding:0 auto;
+    position:fixed;
+    right:0;
+    width:450px;
+    height:100%;
+    background-color: #888;
+    opacity: 0.9;
+    transition:all 0.7s;
+    z-index: 99;
+  }
+  #header_container{
+    justify-content: space-between;
+    /* background-color: rgb(226, 255, 146); */
+  }
+  .logo{
+    display: none;
+  }
+  .logo_s{
+    display: block;
+    margin-top:35px;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    /* background-color: aquamarine; */
+  }
+
+  #navbar, .quick_mn{
+    display: none;
+  }
+
+  #header_quick_nav_icon{
+    display: block;
+    margin-right: 20px;
+  }
+  #header_quick_nav .qnav_close{
+    float: right;
+    margin: 10px auto;
+    margin-right: 15px;
+    width:30px;
+    height: 30px;
+    position:relative;
+    text-align: center;
+    line-height: 30px;
+    /* background-color: #aaa; */
+    cursor: pointer;
+    z-index:100; 
+  }
+  #header_quick_nav .qnav_close:hover{
+   
+    transform: rotate(-90deg) ;
+    transition: 0.5s;
+  }
+  #contents{
+    margin:0 auto;
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+  }
+};

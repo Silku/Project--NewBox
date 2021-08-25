@@ -1,10 +1,10 @@
-const qm = document.querySelector('#header_quickmenu');
-const header_quickmenu_dtl = document.querySelector('#header_quickmenu_dtl');
-qm.onclick = () => {
-  header_quickmenu_dtl.style.display = 'block';
+const qnav_icon = document.querySelector('#header_quick_nav_icon');
+const qnav = document.querySelector('#header_quick_nav');
+qnav_icon.onclick = () => {
+  qnav.style.display = 'block';
 };
 
-const qm_close = document.querySelector('.qm_close');
-qm_close.onclick = () => {
-  header_quickmenu_dtl.style.display = 'none';
+const qnav_close = document.querySelector('.qnav_close');
+qnav_close.onclick = () => {
+  qnav.style.display = 'none';
 };
