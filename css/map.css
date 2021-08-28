@@ -105,13 +105,12 @@ a{
   display: none;
 }
 /* 메인 페이지 시작 */
-/* 메인페이지 (콘텐츠)영역 시작*/
-/* 
-  map css 비고!! 
-  구글 api 오리지널 css랑 겹쳐서 코드 엉망진창임
-  jsp작업할때 주의할것
 
-  #map_container 선택자는 구글api css속성 가져온것
+
+/* 메인 페이지 (콘텐츠)영역 시작*/
+/*
+구글 맵 사이즈 컨트롤은
+map_goolge.css의  #map_container 참조
 */
 #container_wrap{
     display: flex;
@@ -134,15 +133,7 @@ a{
     margin-bottom : 20px;
     border-bottom: 1px solid #ccc;
  }
-  #map-container {
-      display: flex;
-      margin : 0 auto;
-      width: 70%;
-      height: 65%;
-      position: relative;
-      font-family: "Roboto", sans-serif;
-      box-sizing: border-box;
-    }  
+  
   .map_info{
     margin : 20px auto;
     width:70%;
@@ -154,13 +145,14 @@ a{
   .map_info .map_th{
     width:30%;
     text-align: center;
+    letter-spacing:0.4em;
+    border-bottom:1px solid #cdcdcd;
     background-color:#428eed;
     color: white;
   }
   .map_info .map_td{
   padding-left: 15px;
   }
-
 /* 푸터 영역 */
 #footer{
     display: flex;

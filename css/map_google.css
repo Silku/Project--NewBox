@@ -9,12 +9,11 @@ body {
   display: flex;
   margin : 0 auto;
   width: 70%;
-  height: 90%;
+  height: 65%;
   position: relative;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-}
-
+} 
 #map-container button {
   background: none;
   color: inherit;
