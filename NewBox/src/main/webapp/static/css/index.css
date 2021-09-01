@@ -519,7 +519,7 @@ a:-webkit-any-link {
     left: -4px;
     width: 16px;
     height: 16px;
-    background: url(/image/3treebox.PNG);
+    background: url(../image/3treebox.PNG);
 }
 .screen_out {
     position: absolute;

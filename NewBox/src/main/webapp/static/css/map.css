@@ -209,7 +209,7 @@ map_goolge.css의  #map_container 참조
   flex-direction: column;
   width:50%;
   height: 170px;
-  background: url(/origin/image/bottom_menu01.jpg) center;
+  background: url(../image/bottom_menu01.jpg) center;
   color:aliceblue;
 }
 .footer_top_right{
@@ -219,7 +219,7 @@ map_goolge.css의  #map_container 참조
   flex-direction: column;
   width:50%;
   height: 170px;
-  background: url(/origin/image/bottom_menu07.jpg) center;
+  background: url(../image/bottom_menu07.jpg) center;
   color:aliceblue;
 }
 #footer_bottom{

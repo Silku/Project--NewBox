@@ -1,30 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NewBox에 오신것을 환영합니다.</title>
-	<link rel="stylesheet" href="css/global.css">
-	<script src="https://kit.fontawesome.com/7b49269132.js" crossorigin="anonymous"></script>
-</head>
+
+<!-- 
+헤더 사용 설명서 : 
+본 헤더의 위 영역에는 <!DOCTYPE html>부터 </head>까지를 필요로함.
+
+헤더삽입시 해당 페이지의 아래에 css속성 추가를 필요로 함.
+<link rel="stylesheet" href="css/HnFstyle.css">
+-->
 <body>
     <!-- 퀵 네비 -->
 	<nav id="header_quick_nav">
 		<div class="qnav_logo"></div>
 		<div class="qnav_close"><i class="fas fa-times"></i></div>
 			<ul>
-				<li><a href="">로그인</a></li>
-				<li><a href="#">회원가입</a></li>
-				<li><a href="#">제품안내</a></li>
-				<li><a href="#">오시는길</a></li>
-				<li><a href="#">공지사항</a></li>
+				<li><a href="login">로그인</a></li>
+				<li><a href="signin">회원가입</a></li>
+				<li><a href="product">제품안내</a></li>
+				<li><a href="global">세계적인 NewBox</a>
+				<li><a href="map">오시는길</a></li>
+				<li><a href="notice">공지사항</a></li>
 			</ul>
 	</nav>
     <!-- 컨테이너 -->
     <div id = "container_wrap">
+    
 		<header id = "header">
 			<nav id ="header_container">
 				<div class="logo">
@@ -35,19 +35,19 @@
 				</div>
 				<ul id="navbar">
 					<li class="navbar_list">
-						<a href="index.html">NewBox</a>
+						<a href="index">NewBox</a>
 					</li>
 					<li class="navbar_list">
-						<a href="product.html">Product</a>
+						<a href="product">Product</a>
 					</li>
 					<li class="navbar_list">
-						<a href="global.html">Global</a>
+						<a href="global">Global</a>
 					</li>
 					<li class="navbar_list">
-						<a href="map.html">Map</a>
+						<a href="map">Map</a>
 					</li>
 					<li class="navbar_list">
-						<a href="notice.html">Notice</a>
+						<a href="notice">Notice</a>
 					</li>
 				</ul>
 				<div class="quick_menu">

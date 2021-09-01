@@ -1,6 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/HnFstyle.css">
+    <title>NEW BOX에 오신것을 환영합니다.</title>
+</head>
 
 <jsp:include page="/WEB-INF/views/include/header.jsp"></jsp:include>
 
@@ -42,7 +52,7 @@
                     </span>
                     </span>
                  <a href="#" data-tiara-layer="click_main01" data-tiara-action-name="click_main01" aria-hidden="true" tabindex="-1" class="wrap_thumb">
-                     <img src="image/onebox.png" alt="test" class="thumb_img"></a>
+                     <img src="/image/onebox.png" alt="test" class="thumb_img"></a>
                     </div>
                     </div>
                     </div>

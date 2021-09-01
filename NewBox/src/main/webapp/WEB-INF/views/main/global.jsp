@@ -2,8 +2,20 @@
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NewBox에 오신것을 환영합니다.</title>
+	<link rel="stylesheet" href="css/HnFstyle.css">
+	<script src="https://kit.fontawesome.com/7b49269132.js" crossorigin="anonymous"></script>
+</head>
+
 <jsp:include page="/WEB-INF/views/include/header.jsp"></jsp:include>
 
+<link rel="stylesheet" href="css/global.css">
 		<main id = "contents">
 			<section id ="main_image">
 				<p>Dreams of a Blue World</p>
