@@ -9,9 +9,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class LoginController {
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView loginIndex() {
-		ModelAndView view = new ModelAndView("/main/login");
+		ModelAndView view = new ModelAndView("/user/login");
+		return view;
+	}
+
+	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	public ModelAndView SignupIndex() {
+		ModelAndView view = new ModelAndView("/user/signup");
 		return view;
 	}
 }

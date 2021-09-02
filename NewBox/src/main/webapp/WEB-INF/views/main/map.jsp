@@ -39,7 +39,7 @@
 		<div class="qnav_close"><i class="fas fa-times"></i></div>
 			<ul>
 				<li><a href="login">로그인</a></li>
-				<li><a href="signin">회원가입</a></li>
+				<li><a href="signup">회원가입</a></li>
 				<li><a href="product">제품안내</a></li>
 				<li><a href="global">세계적인 NewBox</a>
 				<li><a href="map">오시는길</a></li>
@@ -76,8 +76,8 @@
 				</ul>
 				<div class="quick_menu">
 					<ul>
-					<li><a href="#">로그인</a></li>
-					<li><a href="#">회원가입</a></li>
+					<li><a href="login">로그인</a></li>
+					<li><a href="signup">회원가입</a></li>
 					</ul>
 				</div>
 				<div id="header_quick_nav_icon">
