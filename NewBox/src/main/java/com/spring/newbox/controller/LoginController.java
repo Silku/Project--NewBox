@@ -15,9 +15,4 @@ public class LoginController {
 		return view;
 	}
 
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
-	public ModelAndView SignupIndex() {
-		ModelAndView view = new ModelAndView("/user/signup");
-		return view;
-	}
 }

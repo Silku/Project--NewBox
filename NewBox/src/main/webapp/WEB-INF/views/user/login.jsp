@@ -19,35 +19,35 @@
     <!-- Custom styles for this template -->
     <link href="css/login.css" rel="stylesheet">
   </head>
-  <body class="text-center">
+  <body>
+      <main class="form-signin">
+      <form>
+        <h2 class=" h1 mb-4"> <a class="logo" href="index">
+          <!-- <img src="image/logo_s.png">  -->
+          NewBox</a> </h2>
+     
+        <div class="form-floating mb-2">
+          <input type="id" class="form-control" id="floatingInput" placeholder="아이디 입력">
+          <label for="floatingInput">아이디를 입력하세요.</label>
+        </div>
     
-  <main class="form-signin">
-    <form>
-      <h2 class=" h1 mb-5">NewBox 로그인</h2>
-      <!-- <h1 class="h3 mb-3 fw-normal">Please sign in</h1> -->
-  
-      <div class="form-floating mb-1">
-        <input type="id" class="form-control" id="floatingInput" placeholder="아이디 입력">
-        <label for="floatingInput">아이디를 입력하세요.</label>
-      </div>
-  
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호 입력">
-        <label for="floatingPassword">비밀번호를 입력하세요.</label>
-      </div>
-  
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> 로그인 상태 유지
-        </label>
-      </div>
-      
-      <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">로그인</button>
-      <button class="w-100 btn btn-lg btn-secondary" type="button" href="signup">회원가입</button>
-      <p class="mt-5 mb-3 text-muted">&copy; NewBox 2021</p>
-    </form>
-  </main>
-  </body>
-  
-  </html>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호 입력">
+          <label for="floatingPassword">비밀번호를 입력하세요.</label>
+        </div>
+    
+        <div class="checkbox mb-4">
+          <label>
+            <input type="checkbox" value="remember-me"> 로그인 상태 유지
+          </label>
+        </div>
+        
+        <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">로그인</button>
+        <button class="w-100 btn btn-lg btn-secondary" type="button" ><a href="signup">회원가입</a></button>
+        <p class="mt-5 mb-3 text-muted">&copy; NewBox 2021</p>
+      </form>
+    </main>
+    </body>
+</html>
+
 
