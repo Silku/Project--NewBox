@@ -28,7 +28,7 @@
 						<option value="toyFavorites">완구/취미</option>
 						</select>
 						<input type="search" name="search">
-						<button type="submit"></button>
+						<button type="submit">검색</button>
 					</form>
 				</div>
 				</div>
@@ -68,9 +68,7 @@
 					<div class="item1">
 						<p>아이템</p>
 					</div>
-					<div class="item1">
-						<p>아이템</p>
-					</div>
+
 					</section>
 			</section>
 			</div> 

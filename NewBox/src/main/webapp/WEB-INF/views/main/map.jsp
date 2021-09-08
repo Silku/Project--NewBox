@@ -156,8 +156,8 @@
                         <ul class ="footer_quickmenu_mn">
                             <li>PRODUCT
                                 <ul>
-                                    <li>포카리스웨트</li>
-                                    <li>포카리스웨트 이온워터</li>
+                                    <li>뉴박스</li>
+                                    <li>뉴박스 패키지</li>
                                     <li>연혁</li>
                                     <li>패키지</li>
                                 </ul>
@@ -196,7 +196,7 @@
                     </div>
                 </section>
                 <section id ="copyright">
-                    Copyright ⓒ2017 donga-Otsuka co, ltd. All rights reserved
+                    Copyright ⓒ2021 NewBox co, ltd. All rights reserved
                 </section>
             </footer>
         </div>
