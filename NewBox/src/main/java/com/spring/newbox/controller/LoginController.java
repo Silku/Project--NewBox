@@ -14,5 +14,9 @@ public class LoginController {
 		ModelAndView view = new ModelAndView("/user/login");
 		return view;
 	}
-
+	
+	public ModelAndView loginCheck() {
+		ModelAndView view = new ModelAndView("/user/login");
+		return view;
+	}
 }

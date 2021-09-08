@@ -12,4 +12,16 @@
 		where
 			user_id=#{id}	
 	</select>
+	<insert id="signupInsert" parameterType="com.spring.newbox.model.beans.SignupBean">
+		insert into
+			user_mst
+		values(
+			#{signup_id},
+			#{signup_pw},
+			#{signup_name},
+			#{signup_email},
+			now(),
+			now()
+		);
+	</insert>
 </mapper>

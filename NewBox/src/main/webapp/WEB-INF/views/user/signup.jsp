@@ -28,31 +28,36 @@
 	
 	      <div class="form-floating mb-3">
 	      	<input type="hidden" id="id_check" value="${empty idCheck_flag ? false : idCheck_flag }">
-	        <input type="id" id="signup_id" class="form-control" value="${empty signup_id ? '': signup_id}" placeholder="아이디 입력"> 
+	        <input type="id" id="signup_id" class="form-control" name="signup_id" value="${empty signup_id ? '': signup_id }" placeholder="아이디 입력"> 
 	        <label for="floatingInput">아이디를 입력하세요.</label>
 	      </div>
-	
+          
 	      <div class="form-floating mb-1">
-	        <input type="password" class="form-control" placeholder="비밀번호 입력">
-	        <label for="floatingPassword">비밀번호를 입력하세요.</label>
+	        <input type="password" class="form-control" name="signup_pw"  placeholder="비밀번호 입력">
+	        <label for="floatingPassword" >비밀번호를 입력하세요.</label>
 	      </div>
 	
 	      <div class="form-floating mb-3">
-	        <input type="password" class="form-control"  placeholder="비밀번호 재확인">
+	        <input type="password" class="form-control" name="signup_repw"  placeholder="비밀번호 재확인">
 	        <label for="floatingPassword">비밀번호를 재확인하세요.</label>
 	      </div>
 	
+		  <div class="form-floating mb-3">
+	        <input type="name" class="form-control" name="signup_name"  placeholder="이름">
+	        <label for="floatingInput">이름을 입력하세요.</label>
+	      </div>
+	
 	      <div class="form-floating mb-3">
-	        <input type="email" class="form-control"  placeholder="name@example.com">
+	        <input type="email" class="form-control" name="signup_email" placeholder="name@example.com">
 	        <label for="floatingInput">이메일 주소를 입력하세요.</label>
 	      </div>
 	
 	      <div class="checkbox mb-3">
 	      <label>
-	        <input type="checkbox" value="remember-me"> 개인정보 이용에 동의합니다.
+	        <input id="checkbox" type="checkbox" value="false"> 개인정보 이용에 동의합니다.
 	      </label>
 	      </div>
-	      <button class="w-100 btn btn-lg btn-primary" id="signup_submit" type="submit">회원가입</button>
+	      <button class="w-100 btn btn-lg btn-primary" id="signup_submit" type="submit" name="submitflag" value="false">회원가입</button>
 	      <p class="mt-5 mb-3 text-muted">&copy; NewBox 2021</p>
 	    </form>
 	  </main>
@@ -61,17 +66,26 @@
             const signup_submit = document.querySelector('#signup_submit');
             
             const signup_id = document.querySelector("#signup_id");
-            const id_check = document.querySelector("#id_check");
-            
-         	if(id_check.value == "true"){
-         		alert("중복된 아이디입니다.");
-         	}
+			const id_check = document.querySelector("#id_check");
+			
+
+			
          	signup_id.onblur = () =>{
             	location.href = "signupIdCheck?signup_id=" + signup_id.value;            
-            }         
-            submit.onclick = () =>{	
-            	signup_form.submit();
             }
-    </script>
+         	
+        	if(id_check.value == "true"){
+         		alert("이미 존재하는 아이디입니다.");	
+         	}
+
+
+        	submit.onclick = () =>{	
+  				
+        		signup_form.submit();
+	           
+	        }
+    		
+ 
+      </script>
     </body>
   </html>

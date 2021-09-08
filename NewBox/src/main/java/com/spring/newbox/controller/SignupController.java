@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.newbox.dao.SignupDAO;
+import com.spring.newbox.model.beans.SignupBean;
 
 @Controller
 public class SignupController {
@@ -29,9 +30,10 @@ public class SignupController {
 		return view;
 	}
 	@RequestMapping(value = "/signupInsert", method = RequestMethod.POST)
-	public ModelAndView signupInsert(){
+	public ModelAndView signupInsert(SignupBean bean){
 		ModelAndView view = new ModelAndView("/main/index");
-		 
+		signupDAO.signupInsert(bean);
+		System.out.println(bean); 		
 		return view;
 	}
 }

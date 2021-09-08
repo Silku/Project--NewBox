@@ -27,12 +27,12 @@
           NewBox</a> </h2>
      
         <div class="form-floating mb-2">
-          <input type="id" class="form-control" id="floatingInput" placeholder="아이디 입력">
+          <input type="id" class="form-control" id="floatingInput" name="login_id" placeholder="아이디 입력">
           <label for="floatingInput">아이디를 입력하세요.</label>
         </div>
     
         <div class="form-floating mb-3">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호 입력">
+          <input type="password" class="form-control" id="floatingPassword" name="login_pw" placeholder="비밀번호 입력">
           <label for="floatingPassword">비밀번호를 입력하세요.</label>
         </div>
     
