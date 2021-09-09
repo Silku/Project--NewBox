@@ -32,8 +32,11 @@ public class SignupController {
 	@RequestMapping(value = "/signupInsert", method = RequestMethod.POST)
 	public ModelAndView signupInsert(SignupBean bean){
 		ModelAndView view = new ModelAndView("/main/index");
-		signupDAO.signupInsert(bean);
-		System.out.println(bean); 		
+		int signupCount = signupDAO.signupInsert(bean);
+		System.out.println("회원가입 :" + signupCount + "건" );
+		if(signupCount > 0) {
+			view.addObject("signupFlag", true); 
+		}
 		return view;
 	}
 }
