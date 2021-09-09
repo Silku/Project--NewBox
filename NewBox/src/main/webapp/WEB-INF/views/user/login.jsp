@@ -21,7 +21,7 @@
   </head>
   <body>
       <main class="form-signin">
-      <form>
+      <form action="loginCheck" method="post">
         <h2 class=" h1 mb-4"> <a class="logo" href="index">
           <!-- <img src="image/logo_s.png">  -->
           NewBox</a> </h2>

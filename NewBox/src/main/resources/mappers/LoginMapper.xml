@@ -5,13 +5,25 @@
 
 <mapper namespace="com.spring.newbox.dao.LoginDAO">
 
-	<select id="login" parameterType="com.spring.newbox.model.beans.LoginBean">
+	<select id="login" resultType="Integer">
 		select 
-			user_id, 
-			user_pwd, 
+			count(*)
 		from 
 			user_mst 
 		where 
-			user_id = ? and user_pwd = ?;
+			user_id = #{user_id}
+		and user_pwd = #{user_pwd};
+	</select>
+	
+	<select id="getUserBean" resultType="com.spring.newbox.model.beans.UserBean">
+		select
+			user_id,
+			user_pwd,
+			user_name,
+			user_email
+		from
+			user_mst
+		where
+			user_id = #{id};
 	</select>
 </mapper>

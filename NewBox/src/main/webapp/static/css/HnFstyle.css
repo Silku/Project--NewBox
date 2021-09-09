@@ -25,12 +25,23 @@ a{
   padding:0 auto;
   position:fixed;
   right:0;
-  width:50%;
+  width:70%;
   height:100%;
-  background-color: #888;
-  opacity: 0.9;
+  background-color: rgba(0,192,255,0.9);
+  opacity: 0.95;
   transition:all 0.7s;
   z-index: 99;
+}
+#header_quick_nav ul{
+  margin-top : 100px;
+  padding : 200px 80px auto;
+}
+#header_quick_nav li{
+  margin-top:60px;
+  width:75%;
+  border-bottom: 1px solid #393939;
+  font-size: 24px;
+  font-weight: bolder;
 }
 #header_quick_nav_icon{
   display: none;

@@ -13,7 +13,6 @@
 </head>
 
 <jsp:include page="/WEB-INF/views/include/header.jsp"></jsp:include>
-
     <main class="doc-main">
         <div class="wrap_tit">
            <!-- <img src="image/ico_date26.png" alt="25일">
@@ -23,9 +22,9 @@
    <div class="main-aticle">
        <article class="content-aticle">
            <h3 role="text" class="tit_main tit_home tit_date26">
-            <img src="image/ico_date26.gif" class="date26"> <em class="emph_tit"> 오늘의 NEwBOX</em>
+            <img src="image/ico_date26.gif" class="date26"> <em class="emph_tit"> 오늘의 NEWBOX</em>
             <span class="txt_tit"><br>
-                8월 26일 수요일 소식입니다
+                9월 10일 금요일 소식입니다
             </span>
           </h3>  
           <!--첫번째 박스 시작-->
@@ -52,7 +51,7 @@
                     </span>
                     </span>
                  <a href="#" data-tiara-layer="click_main01" data-tiara-action-name="click_main01" aria-hidden="true" tabindex="-1" class="wrap_thumb">
-                     <img src="/image/onebox.png" alt="test" class="thumb_img"></a>
+                     <img src="image/onebox.png" alt="test" class="thumb_img"></a>
                     </div>
                     </div>
                     </div>
@@ -137,7 +136,7 @@
               <!--고객센터, 사람과기술...-->
               <div class="wrap_culture">
                   <strong class="tit_culture tit_pc">
-                     프로젝트은 김태우
+                     프로젝트 김태우
                      <br>
                      그리고 박용수입니다.
                   </strong>
@@ -153,7 +152,7 @@
                       <a href="#" data-tiara-layer="click_main07" data-tiara-action-name="click_main07" class="link_etc link_service">
                         <strong class="tit_item">어떤 서비스를 도와드릴까요?</strong>
                         <span class="txt_item">
-                            채팅봇 연결하기
+                            고객 상담원 연결
                       </span>
                      </a> 
                     </div>   
