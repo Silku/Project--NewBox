@@ -59,7 +59,7 @@
 						</c:when>
 						<c:otherwise>
 							<ul >
-								<li>${loginUserBean.user_name }님</li>
+								<li><span>${loginUserBean.user_name }</span>님</li>
 								<li><a href="logout">로그아웃</a></li>
 							</ul>
 						</c:otherwise>

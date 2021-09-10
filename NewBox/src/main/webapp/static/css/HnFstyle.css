@@ -135,6 +135,10 @@ a{
 .quick_menu li{
   display: inline-block;
 }
+.quick_menu li > span{
+  color: rgb(0 65 255);
+  font-weight: 700;
+}
 .quick_menu li:after{
   content: "";
   display: inline-block;

@@ -306,3 +306,51 @@ select{
     /* background-color: red; */
   }
 };
+
+
+
+ /* 게시판용 급조 css (나중에 걍 지워버려도 됨) */
+ .border_table {
+    width: 900px;
+    border-collapse: collapse;
+}
+
+.border_table tr {
+    height: 30px;
+}
+
+.border_table tr th {
+    border-top: 2px solid rgb(0, 162, 255);
+    border-bottom: 1px solid rgb(223, 223, 223);
+    background: rgb(240, 240, 240);
+}
+
+.border_table tr td {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-align: center;
+}
+
+
+.border_table tr .border_index{
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 90px;
+}
+
+.border_table tr .border_title{
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 450px;
+}
+
+.border_table tr .border_writer{
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 135px;
+}
+
+.border_table tr .border_date{
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 135px;
+}
+
+.border_table tr .border_count{
+    width: 90px;
+}
