@@ -24,7 +24,7 @@
            <h3 role="text" class="tit_main tit_home tit_date26">
             <img src="image/ico_date26.gif" class="date26"> <em class="emph_tit"> 오늘의 NEWBOX</em>
             <span class="txt_tit"><br>
-                9월 10일 금요일 소식입니다
+                10월 18일 월요일 소식입니다
             </span>
           </h3>  
           <!--첫번째 박스 시작-->
@@ -51,7 +51,7 @@
                     </span>
                     </span>
                  <a href="#" data-tiara-layer="click_main01" data-tiara-action-name="click_main01" aria-hidden="true" tabindex="-1" class="wrap_thumb">
-                     <img src="image/onebox.png" alt="test" class="thumb_img"></a>
+                     <img src="image/index_bgcontents1.png" alt="test" class="thumb_img"></a>
                     </div>
                     </div>
                     </div>
@@ -104,7 +104,7 @@
                             ▼1000
                         </span>
                     </strong>
-                    <span class="info_card">2021.08.27 23:00PM</span>
+                    <span class="info_card">2021.10.18 15:00PM</span>
                         </div>
                     </a>
                 </div>  
@@ -123,8 +123,8 @@
                          <strong class="tit_card">뉴박스는 당신과 함께 더 나은 세상을 만듭니다.</strong>
                     <span class="info_card">
                         <span class="txt_keyword">#뉴박스</span>
-                        <span class="txt_keyword">#개빡세</span>
-                        <span class="txt_keyword">#잠온다</span>
+                        <span class="txt_keyword">#팀</span>
+                        <span class="txt_keyword">#프로젝트</span>
                     </span>
                     </div>
                     </a>
@@ -136,9 +136,9 @@
               <!--고객센터, 사람과기술...-->
               <div class="wrap_culture">
                   <strong class="tit_culture tit_pc">
-                     프로젝트 김태우
+                     끊임없는 고민과 열린 소통으로 
                      <br>
-                     그리고 박용수입니다.
+                     더 나은 서비스를 만듭니다.
                   </strong>
                   <a href="#" data-tiara-layer="click_main06" 
                     data-tiara-action-name="click_main06" class="link_cuture">

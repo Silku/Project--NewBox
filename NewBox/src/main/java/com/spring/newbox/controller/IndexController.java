@@ -13,8 +13,6 @@ public class IndexController {
 		ModelAndView view = new ModelAndView("/main/index");
 		
 		return view; 
-	
-
-	
+		
 	}
 }
